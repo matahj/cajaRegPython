@@ -1,6 +1,6 @@
 
 class Caja:
-    estdo = 'off'
+    estado = 'off'
     
     def __init__(self):
         self.estado = 'on'
@@ -10,7 +10,7 @@ class Caja:
 
     def comprar(self):
         print("Ingresar precio: ")
-        priducto = float( input() )
+        producto = float( input() )
 
 
 
