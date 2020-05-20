@@ -1,19 +1,38 @@
 
-class Caja:
-    estado = 'off'
+import CajaReg as cr
+
+
+c1 = cr.Caja()
+print("Estado de la caja: " + c1.getEstado() )
+
+while c1.getEstado() == 'on' :
     
-    def __init__(self):
-        self.estado = 'on'
+    c1.imprimeMenu()
+    print("Seleccione opción: ")
+    resp = int(input())
 
-    def getEstado(self):
-        return self.estado
+    if resp== 1:
+        c1.comprar()
+    elif resp == 2:
+        c1.imprimeNumeroTickets()
+    elif resp == 3:
+        pass
+    elif resp == 4:
+        c1.corteCaja()
+    elif resp == 5:
+        c1.apagar()
+    else:
+        print("Opción no válida")
 
-    def comprar(self):
-        print("Ingresar precio: ")
-        producto = float( input() )
+    
+
+#    print("Nueva Compra (si/no): ")
+#    resp = input()
+#    if(resp=='no'):
+#        c1.apagar()
+#    else:
+#        pass
+
+#print("Estado de la caja: " + c1.getEstado() )
 
 
-
-c1 = Caja()
-print( c1.getEstado() )
-c1.comprar()
