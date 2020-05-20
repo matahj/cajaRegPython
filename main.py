@@ -1,19 +1,12 @@
 
-class Caja:
-    estado = 'off'
-    
-    def __init__(self):
-        self.estado = 'on'
+import CajaReg as cr
 
-    def getEstado(self):
-        return self.estado
+print("Iniciando caja...")
+c1 = cr.Caja()
+print("Estado de la caja: " + c1.getEstado() )
 
-    def comprar(self):
-        print("Ingresar precio: ")
-        producto = float( input() )
-
-
-
-c1 = Caja()
-print( c1.getEstado() )
+print("Iniciando Compra...")
 c1.comprar()
+print("Fin de la compra....")
+
+
