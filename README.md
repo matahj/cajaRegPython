@@ -2,16 +2,23 @@
 
 ### Primera parte
 
-- Generar una compra
-- Obtener un ticket
+- Generar una Compra. Se solicitan ids de productos en una lista (integrada)
 
 ### Segunda Parte
 
-- Número de tickets
-- Total de ventas
+- Imprimir número de Tickets. Están guardados en una lista.
+- Impirmir un Ticket. El usuario da un número.
 
 ### Tercera Parte
 
-- Corte de caja
-- Apagar Caja Registradora
+- Corte de Caja. Imprime la cantidad de dinero en Caja.
 
+### Cuarta parte
+
+- Apagar Caja Registradora. Se guarda el registro en un archivo.
+
+### Ejecución
+
+~~~
+python main.py
+~~~

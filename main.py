@@ -1,13 +1,17 @@
 
 import CajaReg as cr
-
+import os
 
 c1 = cr.Caja()
 print("Estado de la caja: " + c1.getEstado() )
 
 while c1.getEstado() == 'on' :
-    
+
+    #os.system('clear') #limpiar pantalla para Linux.
+    print("********************************************************************")
+    print("********************************************************************")
     c1.imprimeMenu()
+
     print("Seleccione opción: ")
     resp = int(input())
 
@@ -16,7 +20,7 @@ while c1.getEstado() == 'on' :
     elif resp == 2:
         c1.imprimeNumeroTickets()
     elif resp == 3:
-        pass
+        c1.imprimeTicketPorID()
     elif resp == 4:
         c1.corteCaja()
     elif resp == 5:
@@ -24,6 +28,7 @@ while c1.getEstado() == 'on' :
     else:
         print("Opción no válida")
 
+    
     
 
 #    print("Nueva Compra (si/no): ")
